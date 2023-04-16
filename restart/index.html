@@ -7,15 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Silkscreen&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <title>Home</title>
     <link rel="stylesheet" href="index.css">
+
+    <script src="nav.js"></script>
 </head>
 <body>
     <div id="page-grid">
         <div id="navbar-flexbox">
             <div id="navbarLink-grid">
-                <div class="dropdown">
+                <div class="dropdown" onclick="toggleNavbar()">
                     <!--set following line text to current page name-->
                         <div class="dropbtn">&#9776; Home </div>
-                        <div class="dropdown-content">
+                        <div id="dropdown-content">
                             <div id="home-link" class="hvr-hang"><a href="index.html">Home</a></div>
                             <div id="about-link" class="hvr-hang"><a href="about.html">About</a></div>
                             <div id="web-link" class="hvr-hang"><a href="webWork.html">Web Development</a></div>

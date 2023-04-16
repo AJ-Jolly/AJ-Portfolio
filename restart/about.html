@@ -7,17 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Silkscreen&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="about.css">
+
+    <script src="nav.js"></script>
     <title>About Me</title>
 </head>
 <body>
     <div id="page-grid">
         <div id="navbar-flexbox">
             <div id="navbarLink-grid">
-                <div class="dropdown">
+                <div class="dropdown" onclick="toggleNavbar()">
                     <!--set following line text to current page name-->
                         <div class="dropbtn">&#9776; About </div>
-                        <div class="dropdown-content">
+                        <div id="dropdown-content">
                             <div id="home-link" class="hvr-hang"><a href="index.html">Home</a></div>
                             <div id="about-link" class="hvr-hang"><a href="about.html">About</a></div>
                             <div id="web-link" class="hvr-hang"><a href="webWork.html">Web Development</a></div>
