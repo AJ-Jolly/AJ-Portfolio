@@ -264,7 +264,8 @@ h1 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    background-color: #260729d4;
+    background-color: #260729;
+    /*background-color: #260729d4;*/
     margin: .5rem;
     border-radius: 5px;
     text-align: center;
