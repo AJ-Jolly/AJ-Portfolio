@@ -211,6 +211,16 @@ h2 {
     margin-top: 6rem;
 }
 
+/*T E S T*/
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+/*E N D  T E S T*/
+
 #contactMe-grid {
     display: grid;
     grid-template-columns: auto;
