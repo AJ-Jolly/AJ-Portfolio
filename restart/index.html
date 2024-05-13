@@ -12,6 +12,10 @@
     <script src="nav.js"></script>
 </head>
 <body>
+<div id="preloader">
+
+</div><!--end preloader-->
+
     <div id="page-grid">
         <div id="navbar-flexbox">
             <div id="navbarLink-grid">
@@ -50,5 +54,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
 </body>
 </html>

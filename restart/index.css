@@ -7,6 +7,15 @@ body {
     background-attachment: fixed;
 }
 
+#preloader {
+    background: #b7b7b7 url(../imgs/hourglass.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 #page-grid {
     display: grid;
     width: auto;
