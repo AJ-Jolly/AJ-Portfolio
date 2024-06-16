@@ -285,6 +285,20 @@ h1 {
     text-align: center;
     overflow: hidden;
 }
+.small-work-container > p {
+    color: #ECE0E7;
+    font-family: "Lato", sans-serif;
+    line-height: 25px;
+}
+.small-work-container > p > a {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.small-work-container > p > a:hover {
+    color: lightgrey;
+}
 
 
 .selectedWork-img > a > img {
