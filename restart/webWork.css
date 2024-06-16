@@ -298,6 +298,10 @@ h1 {
     transition: 0.5s;
 }
 
+#work00-grid {
+    grid-column: 1 / 3;
+}
+
 h2 {
     color: #ECE0E7;
     font-family: 'Silkscreen', cursive;
