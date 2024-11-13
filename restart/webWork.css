@@ -272,6 +272,12 @@ h1 {
     grid-template-rows: auto;
 }
 
+#uncaWork-grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+}
+
 .small-work-container {
     display: grid;
     grid-template-columns: auto;
@@ -315,6 +321,10 @@ h1 {
 #work00-grid {
     grid-column: 1 / 3;
 }
+
+/*#work-grid-item {
+    grid-column: ;
+}*/
 
 h2 {
     color: #ECE0E7;
