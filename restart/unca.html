@@ -43,11 +43,11 @@
         <div id="selectedWork-flexbox">
             <div id="uncaWork-grid">
                 <div id="#work-grid-item" class="small-work-container">
-                    <h2>Homepage</h2>
-                    <div class="selectedWork-img">
-                        <a href="https://new.unca.edu/" target="_blank" rel="noopener noreferrer">
-                            <img src="../imgs/Homepage.png"></img>
-                        </a>
+                        <h2>UNC Asheville Homepage</h2>
+                        <div class="selectedWork-img">
+                            <a href="https://new.unca.edu/" target="_blank" rel="noopener noreferrer">
+                                <img src="../imgs/Homepage.png"></img>
+                            </a>
                     </div>
                 </div>
 
@@ -231,6 +231,29 @@
         window.addEventListener("load", function(){
             loader.style.display = "none";
         })
+
+        //Get Modal
+        var modal1=document.getELementById("workPieceModal1");
+
+        //Get button that opens modal
+        var span = document.getElementByClassName("close")[0];
+
+        //Open modal on click
+        btn1.onclick = function() {
+        modal1.style.display = "block";
+        }
+
+        //Close modal when user clicks x
+        span.onclick = function() {
+        modal1.style.display = "none";
+        }
+
+        //Close modal when user clicks outside it
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+            modal1.style.display = "none";
+            }
+        }
     </script> 
 
 </body>
