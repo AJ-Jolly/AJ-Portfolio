@@ -45,10 +45,30 @@
                 <div id="#work-grid-item" class="small-work-container">
                         <h2>UNC Asheville Homepage</h2>
                         <div class="selectedWork-img">
-                            <a href="https://new.unca.edu/" target="_blank" rel="noopener noreferrer">
-                                <img src="../imgs/Homepage.png"></img>
-                            </a>
-                    </div>
+                            <button id="myBtn"><img src="../imgs/uncaHomepage.jpg" style="width: 60%"></img></button>
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <span class="close">&times;</span>
+                                            <h2>Modal Header</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Some text in the Modal Body</p>
+                                            <a href="https://new.unca.edu/" target="_blank" rel="noopener noreferrer">
+                                                <img src="../imgs/uncaHomepage.jpg" style="width: 40%"></img>
+                                            </a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>Modal Footer</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
                 </div>
 
                 <div id="#work-grid-item" class="small-work-container">
@@ -226,34 +246,31 @@
     </div><!--end page grid-->
 
     <script>
-        var loader = document.getElementById("preloader");
+            // Get the modal
+var modal = document.getElementById("myModal");
 
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-        //Get Modal
-        var modal1=document.getELementById("workPieceModal1");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-        //Get button that opens modal
-        var span = document.getElementByClassName("close")[0];
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-        //Open modal on click
-        btn1.onclick = function() {
-        modal1.style.display = "block";
-        }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-        //Close modal when user clicks x
-        span.onclick = function() {
-        modal1.style.display = "none";
-        }
-
-        //Close modal when user clicks outside it
-        window.onclick = function(event) {
-            if (event.target == modal1) {
-            modal1.style.display = "none";
-            }
-        }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
     </script> 
 
 </body>
