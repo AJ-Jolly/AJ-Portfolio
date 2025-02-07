@@ -259,7 +259,7 @@ h1 {
 }
 
 /*M O D A L*/
-#myBtn {
+#myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7, #myBtn8, #myBtn9, #myBtn10, #myBtn11, #myBtn12, #myBtn13, #myBtn14, #myBtn15, #myBtn16, #myBtn17, #myBtn18, #myBtn19, #myBtn20 {
     background-color: transparent;
     border: transparent;
   }
@@ -282,9 +282,9 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 /* Modal Content */
 .modal-content {
 position: relative;
-background-color: #fefefe;
+background-color: #da268f;
 margin: auto;
-padding: 0;
+padding: 30px;
 border: 1px solid #888;
 width: 80%;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -306,11 +306,12 @@ to {top:0; opacity:1}
 }
 
 /* The Close Button */
-.close {
-color: white;
+.close, .close2, .close3, .close4, .close5, .close6, .clos7, .close8, .close9, .close10, .close11, .close12, .close13, .close14, .close15, .close16, .close17, .close18, .close19, .close20{
+color: #fefefe;
 float: right;
-font-size: 28px;
+font-size: 38px;
 font-weight: bold;
+cursor: pointer;
 }
 
 .close:hover,
