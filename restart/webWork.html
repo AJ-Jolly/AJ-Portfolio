@@ -47,13 +47,28 @@
                 <div id="work00-grid" class="small-work-container">
                     <h2>Employment: Digital Content Specialist, UNC Asheville</h2>
                     <div class="selectedWork-img">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="../imgs/uncaHomepage.jpg" style="width: 30%"></img>
-                        </a>
+                        <button id="myBtn1" class="thumbnail-buttons">
+                            <img style="width: 60%" src="../imgs/Homepage.png">
+                            </button>
+
+                            <!-- The Modal -->
+                            <div id="HomeModal" class="modal HomeModal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content HomeContent">
+                                  <span class="close">×</span>
+                                  <br>
+                                  <img style="width: 50%" src="../imgs/Homepage.png">
+                                  <p>Maintaining and updating UNC Asheville's website, as well as developing content for the university's full site redesign. With the rest of my team, helping to approve the style guide for UNCA's <i>Where It All Starts</i> add campaign. Working closely with graphic designers, photographers, videographers, and social media content managers to push content primarily aimed at current students, prospective students, and families of prospective students. Tracking site traffic with Google Analystics 4 and Lucky Orange. Improving site SEO. Creating graphics for certain webpages using Adobe Photoshop and After Effects. Working in conjunction with faculty and staff across virtually every department to gather and manage written content. Using Appspace to publish content to digital signage across campus.</p>
+                                  
+                              
+                              </div>
+                              
+                              </div>
 
                     </div>
                     
-                <div class="desc-text">Maintaining and updating UNC Asheville's website, as well as developing content for the university's full site redesign. With the rest of my team, helping to approve the style guide for UNCA's <i>Where It All Starts</i> add campaign. Working closely with graphic designers, photographers, videographers, and social media content managers to push content primarily aimed at current students, prospective students, and families of prospective students. Tracking site traffic with Google Analystics 4 and Lucky Orange. Improving site SEO. Creating graphics for certain webpages using Adobe Photoshop and After Effects. Working in conjunction with faculty and staff across virtually every department to gather and manage written content. Using Appspace to publish content to digital signage across campus.</div>
+                <!--<div class="desc-text"></div>-->
                 </div>
                 
                 <div id="work01-grid" class="small-work-container">
@@ -67,7 +82,7 @@
                 </div>
 
                 <h2 class="subtitle">Student Work</h2>
-                
+
                 <div id="work02-grid" class="small-work-container">
                     <h2>White Normativity</h3>
                     <div class="selectedWork-img"> 
@@ -125,6 +140,26 @@
             </div>
         </div>
     </div>
+    <script>
+        var modal1 = document.getElementById("HomeModal");
+        var btn1 = document.getElementById("myBtn1");
+        var span = document.getElementsByClassName("close")[0];
+        
+        btn1.onclick = function() {
+          modal1.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal1.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal1) {
+            modal1.style.display = "none";
+          }
+        }
+    </script>
+
     <script>
         var loader = document.getElementById("preloader");
 
