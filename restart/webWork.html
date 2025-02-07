@@ -60,7 +60,7 @@
                                   <br>
                                   <img style="width: 50%" src="../imgs/Homepage.png">
                                   <p>Maintaining and updating UNC Asheville's website, as well as developing content for the university's full site redesign. With the rest of my team, helping to approve the style guide for UNCA's <i>Where It All Starts</i> add campaign. Working closely with graphic designers, photographers, videographers, and social media content managers to push content primarily aimed at current students, prospective students, and families of prospective students. Tracking site traffic with Google Analystics 4 and Lucky Orange. Improving site SEO. Creating graphics for certain webpages using Adobe Photoshop and After Effects. Working in conjunction with faculty and staff across virtually every department to gather and manage written content. Using Appspace to publish content to digital signage across campus.</p>
-                                  
+                                  <button><a href="unca.html">Learn More</a></button>
                               
                               </div>
                               
@@ -74,11 +74,25 @@
                 <div id="work01-grid" class="small-work-container">
                     <h2>Freelance: James Vester Miller</h2>
                     <div class="selectedWork-img">
-                        <a href="https://jamesvestermiller.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="../imgs/jvm_site_ss.png"></img>
-                        </a>
+                        <button id="myBtn2" class="thumbnail-buttons">
+                            <img style="width: 60%" src="../imgs/jvm_site_ss.png">
+                            </button>
+
+                                <!-- The Modal -->
+                                <div id="admModal" class="modal admModal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content admContent">
+                                      <span class="close2">×</span>
+                                      <br>
+                                      <img style="width: 50%" src="../imgs/jvm_site_ss.png">
+                                      <p>a website for Asheville's James Vester Miller Walking Trail, which highlights the life and work of Black architect James Vester Miller and is led by Miller's grandaughter Andrea Clark</p>
+                                      <button><a href="https://jamesvestermiller.com/" target="_blank" rel="noopener noreferrer">Visit Site</a></button>
+                                  
+                                  </div>
+                                  
+                                  </div>
                     </div>
-                    <div class="desc-text">a website for Asheville's James Vester Miller Walking Trail, which highlights the life and work of Black architect James Vester Miller and is led by Miller's grandaughter Andrea Clark</div>
                 </div>
 
                 <h2 class="subtitle">Student Work</h2>
@@ -86,11 +100,26 @@
                 <div id="work02-grid" class="small-work-container">
                     <h2>White Normativity</h3>
                     <div class="selectedWork-img"> 
-                        <a href="https://aj-jolly.github.io/white-normativity-research/index.html" target="_blank" rel="noopener noreferrer">
-                            <img src="../imgs/whiteNormativity_site_ss.png"></img>
-                        </a>
+                        <button id="myBtn3" class="thumbnail-buttons">
+                            <img style="width: 60%" src="../imgs/whiteNormativity_site_ss.png">
+                            </button>
+
+                                <!-- The Modal -->
+                                <div id="acadModal" class="modal acadModal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content acadContent">
+                                      <span class="close3">×</span>
+                                      <br>
+                                      <img style="width: 50%" src="../imgs/whiteNormativity_site_ss.png">
+                                      <p>Using interactive maps, this project utilized research from Dr. Megan Underhill on how white parents speak to their children about race during times of unrest, such as the protests in responce to Michael Brown's death</p>
+                                      <button><a href="https://aj-jolly.github.io/white-normativity-research/index.html" target="_blank" rel="noopener noreferrer">Visit Site</a></button>
+
+                                  
+                                  </div>
+                                  
+                                  </div>
                     </div>
-                    <div class="desc-text">Using interactive maps, this project utilized research from Dr. Megan Underhill on how white parents speak to their children about race during times of unrest, such as the protests in responce to Michael Brown's death</div>
                 </div>
                 <div id="work03-grid" class="small-work-container">
                     <h2>MCR Redesign</h2>
@@ -98,6 +127,25 @@
                         <a href="https://aj-jolly.github.io/mychem-remade/" target="_blank" rel="noopener noreferrer">
                             <img src="../imgs/mcr_ss.png"></img>
                         </a>
+
+                        <button id="myBtn4" class="thumbnail-buttons">
+                            <img style="width: 60%" src="../imgs/mcr_ss.png">
+                            </button>
+
+                                <!-- The Modal -->
+                                <div id="acaproModal" class="modal acaproModal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content acaproContent">
+                                      <span class="close4">×</span>
+                                      <br>
+                                      <img style="width: 50%" src="../imgs/mcr_ss.png">
+                                      <p>A complete original remake of the popular rock band's website.</p>
+                                      
+                                  
+                                  </div>
+                                  
+                                  </div>
                     </div>
                     <div class="desc-text"></div>
                 </div>
@@ -159,6 +207,66 @@
           }
         }
     </script>
+
+<script>
+    var modal2 = document.getElementById("admModal");
+    var btn = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close2")[0];
+    
+    btn.onclick = function() {
+      modal2.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal2.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    var modal3 = document.getElementById("acadModal");
+    var btn = document.getElementById("myBtn3");
+    var span = document.getElementsByClassName("close3")[0];
+
+    btn.onclick = function() {
+        modal3.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal3.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    var modal4 = document.getElementById("acaproModal");
+    var btn = document.getElementById("myBtn4");
+    var span = document.getElementsByClassName("close4")[0];
+
+    btn.onclick = function() {
+        modal4.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal4.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+    }
+</script>
 
     <script>
         var loader = document.getElementById("preloader");
