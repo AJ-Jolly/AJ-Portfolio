@@ -21,6 +21,22 @@ p {
     color: #ECE0E7; 
 }
 
+.learnMoreBtn {
+    background-color: #10050b;
+    color: #ECE0E7;
+    font-family:'Silkscreen', cursive;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.learnMoreBtn:hover {
+    background-color: #ECE0E7;
+    color: #10050b;
+}
+
 /*N A V B A R*/
 
 #navbar-flexbox {
@@ -320,6 +336,7 @@ float: right;
 font-size: 38px;
 font-weight: bold;
 cursor: pointer;
+font-family: 'Silkscreen', cursive;
 transition: 0.3s;
 }
 
